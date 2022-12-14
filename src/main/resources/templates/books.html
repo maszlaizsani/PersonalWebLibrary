@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <title>My books</title>
     <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/books.css}"/>
     <link rel="shortcut icon" type="image/png" th:href="@{/favicon.png}"/>
 </head>
 <body>
 <div class="container-fluid text-center">
-    <div><h1>Manage your personal library</h1></div>
+    <div class="m-5"><h1>Manage your personal library</h1></div>
     <div class="m-2">
         <a class="h3" th:href="@{/books/new}">Add new book</a>
     </div>
     <div th:if="${message}" class="alert alert-success text-center">
         [[${message}]]
     </div>
-
-    <table class="table table-bordered">
+    <div>
+    <table class="table table-bordered table-striped-columns table-dark">
         <thead class="table-header table-dark">
         <tr>
             <th>ID</th>
@@ -43,6 +44,7 @@
         </th:block>
         </tbody>
     </table>
+    </div>
 </div>
 </body>
 </html>

@@ -1,7 +1,7 @@
 package com.mz.bookdatabasewebapplication.model;
 
 import jakarta.persistence.*;
-
+import org.springframework.context.annotation.Bean;
 
 @Entity
 @Table(name = "books")
@@ -9,16 +9,16 @@ public class Book {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id")
     private long id;
+    @Column(name = "author")
+    private String author;
 
     @Column(name = "title")
     private String title;
 
     @Column(name = "description")
     private String description;
-
-    @Column(name = "author")
-    private String author;
 
     @Column(name = "is_read")
     private boolean isRead;

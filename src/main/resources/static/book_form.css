@@ -1,0 +1,16 @@
+body{
+    background-image: url("background.jpg")
+}
+h1 {
+    color: bisque;
+}
+form{
+    max-width: 500px;
+    margin: 0 auto;
+}
+form{
+    background-color: darkslategray;
+}
+div{
+    color: bisque;
+}

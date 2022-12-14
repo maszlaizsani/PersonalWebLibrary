@@ -1,0 +1,11 @@
+body{
+    background-image: url("background.jpg")
+}
+h1 {
+    color: bisque;
+}
+table{
+    max-width:1300px;
+    margin: 0 auto;
+    border-color: black;
+}
